@@ -41,7 +41,7 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'password' => 'required|min:3|confirmed',
             'terms' => 'accepted',
         ]);
 
@@ -59,6 +59,6 @@ class AuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('home')->with('success', 'Logged out successfully!');
+        return redirect()->route('login')->with('success', 'Logged out successfully!');
     }
 }

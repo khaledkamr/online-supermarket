@@ -34,7 +34,7 @@ class CartController extends Controller
         }
 
         Session::put('cart', $cart);
-        return redirect()->route('cart')->with('success', 'Product added to cart!');
+        return redirect()->back()->with('success', 'Product added to cart!');
     }
 
     public function update(Request $request)
@@ -66,6 +66,6 @@ class CartController extends Controller
             Session::put('cart', $cart);
         }
 
-        return redirect()->route('cart')->with('success', 'Product removed from cart!');
+        return redirect()->back()->with('success', 'Product removed from cart!');
     }
 }
