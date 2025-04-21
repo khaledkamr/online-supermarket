@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="text-success fw-bold">SuperMarket</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="text-dark me-3"><i class="fas fa-search"></i></a>
+                    <a href="#" class="text-dark me-3 position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">3</span>
+                    </a>
+                    <a href="login.html" class="text-dark"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-detail py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="imgs/product2.jpg" class="img-fluid rounded shadow-sm" alt="Broccoli" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <h2>Fresh Carrots</h2>
+                    <p class="text-muted">Category: Vegetable</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="text-warning me-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span>3.35 ★</span>
+                    </div>
+                    <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc.</p>
+                    <p>Susp endisse ultricies nisi vel quam suscipit. Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish</p>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="input-group w-25 me-3">
+                            <button class="btn btn-outline-secondary" type="button" id="decrease-quantity">-</button>
+                            <input type="text" class="form-control text-center" id="quantity" value="1" readonly>
+                            <button class="btn btn-outline-secondary" type="button" id="increase-quantity">+</button>
+                        </div>
+                        <button class="btn btn-warning rounded-pill add-to-cart"><i class="fas fa-shopping-cart me-2"></i>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Description</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab">Reviews</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic words etc. Susp endisse ultricies nisi vel quam suscipit</p>
+                            <p>Sabertooth peacock flounder; chain pickerel hatchetfish, pencilfish snailfish filefish Antarctic icefish goldeye aholehole trumpeter pilot fish airbreathing catfish, electric ray sweeper.</p>
+                            <table class="table table-bordered mt-3">
+                                <tr>
+                                    <td>Weight</td>
+                                    <td>1 kg</td>
+                                </tr>
+                                <tr>
+                                    <td>Country of Origin</td>
+                                    <td>Egypt</td>
+                                </tr>
+                                <tr>
+                                    <td>Quality</td>
+                                    <td>Organic</td>
+                                </tr>
+                                <tr>
+                                    <td>Check</td>
+                                    <td>Healthy</td>
+                                </tr>
+                                <tr>
+                                    <td>Min Weight</td>
+                                    <td>250 Kg</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="reviews" role="tabpanel">
+                            <p>No reviews yet. Be the first to review this product!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5 class="text-success">SuperMarket</h5>
+                    <h6>Freshness Delivered</h6>
+                    <img src="imgs/logo.png" alt="SuperMarket Logo" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <h4><strong class="text-warning">Why People Like us!</strong></h4>
+                    <p style="line-height: 1.8;">typesetting,p remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
+                    <button class="btn btn-outline-warning rounded-pill">Read More</button>
+                </div>
+                <div class="col-md-2">
+                    <h5><strong class="text-warning">Shop Info</strong></h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-3"><a href="#" class="text-white">About Us</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Contact Us</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Terms & Condition</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Return Policy</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">FAQs & Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5><strong class="text-warning">Account</strong></h5>
+                    <ul class="list-unstyled">
+                        <li class="pb-3"><a href="#" class="text-white">My Account</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Shop details</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Shopping Cart</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Wishlist</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">Order History</a></li>
+                        <li class="pb-3"><a href="#" class="text-white">International Orders</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5><strong class="text-warning">Contact</strong></h5>
+                    <p>Address: 1429 Netus Rd, NY 48247</p>
+                    <p>Email: example@gmail.com</p>
+                    <p>Phone: +0123 4567 8910</p>
+                    <h6>Payment Accepted</h6>
+                    <div class="d-flex gap-2">
+                        <img src="imgs/visa.png" alt="Visa" class="img-fluid" style="width: 40px;">
+                        <img src="imgs/mastercard.png" alt="MasterCard" class="img-fluid" style="width: 40px;">
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center py-3">
+                <p class="mb-0">© 2023 SuperMarket. All rights reserved.</p>
+                <div class="social-icons mt-2">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/product-details.js"></script>
+</body>
+</html>
