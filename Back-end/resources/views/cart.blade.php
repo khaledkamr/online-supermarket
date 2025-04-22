@@ -4,46 +4,6 @@
 
    @section('styles')
        <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
-       <style>
-           body {
-               font-family: 'Poppins', sans-serif;
-               background-color: #f8f9fa;
-           }
-           .cart img {
-               width: 50px;
-               height: 50px;
-               object-fit: cover;
-           }
-           .cart .table th {
-               background-color: #f8f9fa;
-               color: #343a40;
-           }
-           .cart .table td {
-               vertical-align: middle;
-           }
-           .cart .input-group {
-               width: 120px !important;
-           }
-           .cart .btn-danger {
-               background-color: #dc3545;
-               border: none;
-           }
-           .cart .btn-danger:hover {
-               background-color: #c82333;
-           }
-           .cart .card {
-               background-color: #fff;
-           }
-           .btn-warning {
-               background-color: #ffc107;
-               border: none;
-               color: #343a40;
-           }
-           .btn-warning:hover {
-               background-color: #e0a800;
-               color: #343a40;
-           }
-       </style>
    @endsection
 
    @section('content')

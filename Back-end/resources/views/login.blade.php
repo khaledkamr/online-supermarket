@@ -4,36 +4,6 @@
 
    @section('styles')
        <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
-       <style>
-           body {
-               font-family: 'Poppins', sans-serif;
-               background-color: #f8f9fa;
-           }
-           .login {
-               min-height: 80vh;
-               display: flex;
-               align-items: center;
-           }
-           .login .card {
-               border: none;
-               border-radius: 10px;
-           }
-           .login .form-control {
-               border-radius: 5px;
-               border: 1px solid #ced4da;
-           }
-           .login .form-control:focus {
-               border-color: #28a745;
-               box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
-           }
-           .btn-success {
-               background-color: #28a745;
-               border: none;
-           }
-           .btn-success:hover {
-               background-color: #218838;
-           }
-       </style>
    @endsection
 
    @section('content')

@@ -3,20 +3,7 @@
    @section('title', 'Contact')
 
    @section('styles')
-       <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-       <style>
-           body {
-               font-family: 'Poppins', sans-serif;
-               background-color: #f8f9fa;
-           }
-           .btn-warning {
-               background-color: #ffc107;
-               border: none;
-           }
-           .btn-warning:hover {
-               background-color: #e0a800;
-           }
-       </style>
+       <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
    @endsection
 
    @section('content')

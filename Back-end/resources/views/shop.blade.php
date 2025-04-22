@@ -4,60 +4,6 @@
 
    @section('styles')
        <link rel="stylesheet" href="{{ asset('css/shop.css') }}">
-       <style>
-           body {
-               font-family: 'Poppins', sans-serif;
-               background-color: #f8f9fa;
-           }
-           .shop h2 {
-               color: #343a40;
-           }
-           .shop h5 {
-               color: #343a40;
-               margin-bottom: 15px;
-           }
-           .shop .list-unstyled li {
-               margin-bottom: 10px;
-           }
-           .shop .badge {
-               background-color: #28a745;
-           }
-           .shop .form-range {
-               accent-color: #ffc107;
-           }
-           .product-card {
-               background: white;
-               border-radius: 10px;
-               overflow: hidden;
-               transition: transform 0.3s;
-           }
-           .product-card:hover {
-               transform: translateY(-10px);
-               box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-           }
-           .product-card img {
-               height: 200px;
-               object-fit: cover;
-           }
-           .product-card .badge {
-               background-color: #ffc107;
-               color: #343a40;
-           }
-           .btn-success {
-               background-color: #28a745;
-               border: none;
-           }
-           .btn-success:hover {
-               background-color: #218838;
-           }
-           .btn-warning {
-               background-color: #ffc107;
-               border: none;
-           }
-           .btn-warning:hover {
-               background-color: #e0a800;
-           }
-       </style>
    @endsection
 
    @section('content')

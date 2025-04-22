@@ -4,43 +4,6 @@
 
    @section('styles')
        <link rel="stylesheet" href="{{ asset('css/product-details.css') }}">
-       <style>
-           body {
-               font-family: 'Poppins', sans-serif;
-               background-color: #f8f9fa;
-           }
-           .product-detail h2 {
-               color: #343a40;
-           }
-           .product-detail img {
-               max-height: 400px;
-               object-fit: cover;
-           }
-           .product-detail .nav-tabs {
-               border-bottom: 2px solid #ffc107;
-           }
-           .product-detail .nav-tabs .nav-link {
-               color: #343a40;
-               border: none;
-               border-bottom: 2px solid transparent;
-           }
-           .product-detail .nav-tabs .nav-link.active {
-               color: #ffc107;
-               border-bottom: 2px solid #ffc107;
-           }
-           .product-detail .table {
-               background-color: #fff;
-           }
-           .btn-warning {
-               background-color: #ffc107;
-               border: none;
-               color: #343a40;
-           }
-           .btn-warning:hover {
-               background-color: #e0a800;
-               color: #343a40;
-           }
-       </style>
    @endsection
 
    @section('content')
