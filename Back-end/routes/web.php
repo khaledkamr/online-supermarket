@@ -18,6 +18,8 @@ Route::controller(CartController::class)->group(function () {
     Route::post('/cart/add', 'add')->name('cart.add');
     Route::post('/cart/update', 'update')->name('cart.update');
     Route::post('/cart/remove', 'remove')->name('cart.remove');
+    Route::post('/cart/increase', 'increase')->name('cart.increase');
+    Route::post('/cart/decrease', 'decrease')->name('cart.decrease');
 });
 
 Route::controller(CheckoutController::class)->group(function () {

@@ -68,4 +68,38 @@ class CartController extends Controller
 
         return redirect()->back()->with('success', 'Product removed from cart!');
     }
+
+    public function increase(Request $request)
+    {
+        $productId = $request->input('product_id');
+        $cart = Session::get('cart', []);
+
+        if (isset($cart[$productId])) {
+            $cart[$productId]['quantity'] += 1;
+            Session::put('cart', $cart);
+        }
+
+        return redirect()->route('cart')->with('success', 'Quantity increased!');
+    }
+
+    public function decrease(Request $request)
+    {
+        $productId = $request->input('product_id');
+        $cart = Session::get('cart', []);
+
+        if (isset($cart[$productId])) {
+            if ($cart[$productId]['quantity'] > 1) {
+                $cart[$productId]['quantity'] -= 1;
+                Session::put('cart', $cart);
+            } else {
+                // Optionally, you could remove the item if quantity reaches 0
+                // unset($cart[$productId]);
+                // Session::put('cart', $cart);
+                // return redirect()->route('cart')->with('success', 'Product removed from cart!');
+                return redirect()->route('cart')->with('info', 'Quantity cannot be less than 1!');
+            }
+        }
+
+        return redirect()->route('cart')->with('success', 'Quantity decreased!');
+    }
 }
